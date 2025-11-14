@@ -4,23 +4,28 @@
 
 :root {
   /* 새로운 고급 컬러 팔레트 */
-  --ink: #E9EDF2;           /* 메인 텍스트 - 가장 밝은 색 */
-  --muted: #231e20;         /* 서브 텍스트 - 중간 밝은 색 */
-  --bg: #107243;            /* 메인 배경 - 어두운 색 */
-  --card: #59574F;          /* 카드 배경 - 중간 색 */
+  --ink: #E9EDF2;
+  /* 메인 텍스트 - 가장 밝은 색 */
+  --muted: #231e20;
+  /* 서브 텍스트 - 중간 밝은 색 */
+  --bg: #bb7642;
+  /* 메인 배경 - 어두운 색 */
+  --card: #59574F;
+  /* 카드 배경 - 중간 색 */
   --round: 18px;
-  
+
   /* 헤더 & 보더 */
   --header: rgba(255, 255, 255, 0.3);
   --border: rgba(151, 166, 162, 0.2);
-  
+
   /* 액센트 & 포인트 컬러 */
-  --accent: #107243;        /* 메인 액센트 - 가장 어두운 색 */
+  --accent: #107243;
+  /* 메인 액센트 - 가장 어두운 색 */
   --accent1: #107243;
   --accent2: #107243;
-  --primary-color: #107243;
+  --primary-color: #ba9478;
   --primary-color-full: #107243;
-  
+
   /* 포인트 컬러 - 기존 컬러 팔레트 내에서 변형 */
   --accent3: #231e20;
   --accent4: #59574F;
@@ -28,23 +33,23 @@
   --point-color2: #E9EDF2;
   --point-color3: #59574F;
   --point-color4: #107243;
-  
+
   /* 배경 그라데이션용 컬러 */
   --bg-Cdeep-color1: #107243;
   --bg-Cdeep-color2: #59574F;
   --bg-Cdeep-color3: #231e20;
   --bg-Cdeep-color4: #E9EDF2;
-  
+
   /* 메인 & 서브 컬러 */
   --main-color: #59574F;
   --main-color-deep: #107243;
   --sub-color1: #231e20;
   --sub-color2: #E9EDF2;
-  
+
   /* 투명도 컬러 */
   --color-rgba: rgba(115, 32, 2, 0.47);
   --color-rgbaglass: rgba(115, 32, 2, 0.16);
-  
+
   /* 폰트 패밀리 */
   --en-lang1: "Roboto", sans-serif;
   --en-lang2: "DM Serif Text", serif;
@@ -296,7 +301,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #eeeeee;
+  background: #f6e9d9;
   position: relative;
   flex-direction: column;
   padding-block: 10vh;
@@ -826,19 +831,32 @@ h2 {
   height: 58vh;
   margin: 0 4vw;
   border-radius: 24px;
-  display: grid;
-  place-items: center;
-  font-size: clamp(24px, 5vw, 64px);
+  /*   font-size: clamp(12px, 2vw, 18px); */
   background: linear-gradient(135deg, #e9eef5, #cde6ff);
   color: #0c1217;
-  font-weight: 800;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
   background-size: cover;
   background-position: top center;
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 50px;
 }
+
+.h_item .tit {}
+
+.h_item .tit h2 {
+  font-size: 40px;
+}
+
+.h_item .tit p {}
+
+.h_item .txt {}
+
+.h_item .txt p {}
 
 .h_item::before {
   content: '';
